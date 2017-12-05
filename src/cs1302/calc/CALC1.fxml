@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="429.0" maxWidth="610.0" minHeight="-Infinity" minWidth="600.0" prefHeight="413.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs1302.calc.Controller">
+   <children>
+      <HBox prefHeight="58.0" prefWidth="586.0" style="-fx-border-color: #7c7a7a;">
+         <children>
+            <Text fx:id="output" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="558.21875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="61.0" prefWidth="584.0" style="-fx-border-color: #7c7a7a;">
+         <children>
+            <Text fx:id="output1" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="570.21875">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <VBox prefHeight="94.0" prefWidth="600.0" style="-fx-border-color: #7c7a7a;">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="600.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="40.0" right="10.0" />
+               </padding>
+               <children>
+                  <Label fx:id="bit32" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit31" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit30" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit29" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" text=" " textAlignment="CENTER" />
+                  <Label fx:id="bit28" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit27" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit26" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit25" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" textAlignment="CENTER" />
+                  <Label fx:id="bit24" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit23" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit22" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit21" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" textAlignment="CENTER" />
+                  <Label fx:id="bit20" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit19" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit18" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit17" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" textAlignment="CENTER" />
+                  <Label fx:id="bit16" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit15" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit14" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit13" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" textAlignment="CENTER" />
+                  <Label fx:id="bit12" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit11" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit10" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit9" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" textAlignment="CENTER" />
+                  <Label fx:id="bit8" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit7" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit6" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit5" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="38.0" prefWidth="12.0" textAlignment="CENTER" />
+                  <Label fx:id="bit4" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit3" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit2" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bit1" onMouseClicked="#toggling" prefHeight="38.0" prefWidth="14.0" text="0" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="64.0" prefWidth="600.0">
+               <children>
+                  <Label text="31" textFill="#009cff" />
+                  <Label text="15" textFill="#009cff">
+                     <padding>
+                        <Insets left="250.0" />
+                     </padding>
+                  </Label>
+                  <Label text="0" textFill="#009cff">
+                     <padding>
+                        <Insets left="232.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="50.0" prefWidth="584.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="7" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="8" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="9" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="/" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="!" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#backSpace" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #ff9000;" text="&lt;" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#clean" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #ff9000;" text="X" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets right="10.0" />
+         </opaqueInsets>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="4" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="5" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="6" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="*" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="^" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="&lt;&lt;" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="&gt;&gt;" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="1" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="2" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="3" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="-" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#change" prefHeight="37.0" prefWidth="239.0" style="-fx-background-color: #00b2ff;" text="Use Recursion" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumpad" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="0" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#equal" prefHeight="37.0" prefWidth="157.0" style="-fx-background-color: #1e9d18;" text="=" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#operator" prefHeight="37.0" prefWidth="73.0" style="-fx-background-color: #7c7a7a;" text="+" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#hide" prefHeight="37.0" prefWidth="239.0" style="-fx-background-color: #00b2ff;" text="Hide Binary" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</VBox>
